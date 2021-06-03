@@ -1,0 +1,27 @@
+2021-05-14 14:14:28.354 JST [54328] LOG:  starting PostgreSQL 13.2 on x86_64-apple-darwin20.3.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2021-05-14 14:14:28.355 JST [54328] LOG:  listening on IPv6 address "::1", port 5432
+2021-05-14 14:14:28.355 JST [54328] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-05-14 14:14:28.355 JST [54328] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-05-14 14:14:28.359 JST [54329] LOG:  database system was shut down at 2021-05-14 14:13:07 JST
+2021-05-14 14:14:28.362 JST [54328] LOG:  database system is ready to accept connections
+2021-05-14 14:15:42.976 JST [54392] FATAL:  database "postgres-upgrade-database" does not exist
+2021-05-14 14:21:28.695 JST [54328] LOG:  server process (PID 57520) was terminated by signal 9: Killed: 9
+2021-05-14 14:21:28.695 JST [54328] LOG:  terminating any other active server processes
+2021-05-14 14:21:28.696 JST [54333] WARNING:  terminating connection because of crash of another server process
+2021-05-14 14:21:28.696 JST [54333] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2021-05-14 14:21:28.696 JST [54333] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2021-05-14 14:21:28.698 JST [54328] LOG:  all server processes terminated; reinitializing
+2021-05-14 14:21:28.707 JST [54328] LOG:  startup process (PID 57521) was terminated by signal 9: Killed: 9
+2021-05-14 14:21:28.707 JST [54328] LOG:  aborting startup due to startup process failure
+2021-05-14 14:21:28.708 JST [54328] LOG:  database system is shut down
+2021-05-14 21:18:11.396 JST [81174] LOG:  starting PostgreSQL 13.3 on x86_64-apple-darwin20.4.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2021-05-14 21:18:11.397 JST [81174] LOG:  listening on IPv6 address "::1", port 5432
+2021-05-14 21:18:11.397 JST [81174] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-05-14 21:18:11.398 JST [81174] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-05-14 21:18:11.403 JST [81175] LOG:  database system was shut down at 2021-05-14 21:14:06 JST
+2021-05-14 21:18:11.406 JST [81174] LOG:  database system is ready to accept connections
+2021-05-14 22:59:51.653 JST [88640] FATAL:  database "status" does not exist
+2021-05-14 23:21:06.812 JST [81174] LOG:  received smart shutdown request
+2021-05-14 23:21:06.813 JST [81174] LOG:  background worker "logical replication launcher" (PID 81181) exited with exit code 1
+2021-05-14 23:21:06.813 JST [81176] LOG:  shutting down
+2021-05-14 23:21:06.820 JST [81174] LOG:  database system is shut down
