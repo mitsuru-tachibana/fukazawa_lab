@@ -1,0 +1,7 @@
+{
+  "ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
+  "solargraph.useBundler": false,
+  "solargraph.definitions": true,
+  "solargraph.diagnostics": true
+}

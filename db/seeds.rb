@@ -22,10 +22,10 @@ puts("CREATE USERS")
   )
 }
 # usersテーブルのレコードを確認
-users = User.all
-users.each { |user|
-  puts(user.inspect)
-}
+# users = User.all
+# users.each { |user|
+#   puts(user.inspect)
+# }
 
 # relationテーブルのレコードを確認
 puts("CREATE RELASHONSHIPS")
@@ -66,7 +66,7 @@ posts.each { |post|
 # commentsテーブルのレコードを確認
 comments = Comment.all
 comments.each { |comment|
-  puts(comment.inspect)
+  # puts(comment.inspect)
 }
 
 # ractionテーブルのレコードを作成
