@@ -3,5 +3,6 @@
   "ruby.useLanguageServer": true,
   "solargraph.useBundler": false,
   "solargraph.definitions": true,
+  "css.validate": false,
   "solargraph.diagnostics": true
 }
