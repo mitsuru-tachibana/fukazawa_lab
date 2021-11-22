@@ -1,6 +1,6 @@
 require 'csv'
 require 'fileutils'
-# require 'launchy'
+require 'launchy'
 
 def init
   FileUtils.mkdir_p('convert_csv/intermediates') unless FileTest.exist?('convert_csv/intermediates')
@@ -89,15 +89,14 @@ end
 def visualize(objects)
   file_name = convert_csv(objects)
   attr_num = objects.first.attributes.length
-  array = []
+  records = []
   CSV.open("convert_csv/#{file_name}", 'r') do |csv|
     csv.each_slice(attr_num) do |entry|
-      array << entry
+      records << entry
     end
   end
-  records = array.to_query('records')
   puts file_name
   puts records
   Launchy.open('https://www.youtube.com/')
-  Launchy.open("hogehoge/visualize?#{records}%&file_name=#{file_name}")
+  Launchy.open("hogehoge/visualize?#{records.to_query('records')}%&file_name=#{file_name}")
 end
