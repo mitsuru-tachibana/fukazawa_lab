@@ -95,8 +95,6 @@ def visualize(objects)
       records << entry
     end
   end
-  puts file_name
-  puts records
-  Launchy.open('https://www.youtube.com/')
-  Launchy.open("hogehoge/visualize?#{records.to_query('records')}%&file_name=#{file_name}")
+  class_name = file_name.split('_')[0]
+  Launchy.open("hogehoge/visualize?class_name=#{class_name}&#{records.to_query('records')}")
 end
