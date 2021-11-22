@@ -20262,4 +20262,80 @@ HEAD is now at 1b79d07 Merge pull request #1 from mitsuru-tachibana/develop
 [33mRun `bundle install` to install missing gems.[0m
 [1m[7m%[27m[1m[0m                                                                         
 [0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
-[38;5;087m> [0m[K[62C17:31:44[70D[?2004h
+[38;5;087m> [0m[K[62C17:31:44[70D[?2004hggit  g  ggit add.  .[?2004l
+[1m[7m%[27m[1m[0m                                                                         
+[0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
+[38;5;087m> [0m[K[62C17:32:41[70D[?2004hggit pus    commit - m "細かな修正          bis   visualizeの細かな修正"[?2004l
+[develop ab40c8b] visualizeの細かな修正
+ 5 files changed, 20341 insertions(+), 85 deletions(-)
+ delete mode 100644 convert_csv.rb
+ create mode 100644 cp_gemfile
+ create mode 100644 typescript
+[1m[7m%[27m[1m[0m                                                                         
+[0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
+[38;5;087m> [0m[K[62C17:33:20[70D[?2004hggit push origin master[?2004l
+Warning: Permanently added 'github.com,52.69.186.44' (ECDSA) to the list of known hosts.
+To github.com:mitsuru-tachibana/fukazawa_lab.git
+ [31m! [rejected]       [m master -> master (non-fast-forward)
+[31merror: failed to push some refs to 'git@github.com:mitsuru-tachibana/fukazawa_lab.git'
+[m[33mhint: Updates were rejected because a pushed branch tip is behind its remote[m
+[33mhint: counterpart. Check out this branch and integrate the remote changes[m
+[33mhint: (e.g. 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+[1m[7m%[27m[1m[0m                                                                         
+[0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
+[38;5;087m> [0m[K[62C17:33:35[70D[?2004hggit diff[?2004l
+[?1h=[1mdiff --git a/typescript b/typescript[m[m
+[1mindex 307ac53..beae088 100644[m[m
+[1m--- a/typescript[m[m
+[1m+++ b/typescript[m[m
+[36m@@ -20262,4 +20262,26 @@[m [mHEAD is now at 1b79d07 Merge pull request #1 fro[m [36m[m[mm mitsuru-tachibana/develop[m[m
+ [33mRun `bundle install` to install missing gems.[0m[m[m
+ [1m[7m%[27m[1m[0m                                                                       [m [1m[7m[27m[1m[0m [7m^M[27m [7m^M[27m[m[m
+ [7m^M[27m[0m[27m[24m[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m[m[m
+[31m-[38;5;087m> [0m17:31:44[m[m
+\ No newline at end of file[m[m
+[32m+[m[32m[38;5;087m> [0m17:31:44[1mg[0mit add[1m [0m.[m[41m[7m^M[27m[m[m
+[32m+[m[32m[1m[7m%[27m[1m[0m[m[41m                                                                       [m [32m[m[32m[1m[7m[27m[1m[0m[m[41m [7m^M[27m [7m^M[27m[m[m
+[32m+[m[32m[7m^M[27m[0m[27m[24m[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m[m[41m[7m^M[27m[m[m
+[32m+[m[32m[38;5;087m> [0m17:32:41[1mg[0mit[1m [0mcommit[1mv[0misualizeの細かな修正"[m[41m[7m^M[27m[m[m
+[32m+[m[32m[develop ab40c8b] visualizeの細かな修正[m[41m[7m^M[27m[m[m
+[32m+[m[32m 5 files changed, 20341 insertions(+), 85 deletions(-)[m[41m[7m^M[27m[m[m
+[32m+[m[32m delete mode 100644 convert_csv.rb[m[41m[7m^M[27m[m[m
+[32m+[m[32m create mode 100644 cp_gemfile[m[41m[7m^M[27m[m[m
+[32m+[m[32m create mode 100644 typescript[m[41m[7m^M[27m[m[m
+[32m+[m[32m[1m[7m%[27m[1m[0m[m[41m                                                                       [m [32m[m[32m[1m[7m[27m[1m[0m[m[41m [7m^M[27m [7m^M[27m[m[m
+[32m+[m[32m[7m^M[27m[0m[27m[24m[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KESCESC[K:[K[K:[K[K:[K[K:[K[K:[K[K:[K[K[?1l>[1m[7m%[27m[1m[0m                                                                         
+[0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
+[38;5;087m> [0m[K[62C17:34:41[70D[?2004hggit diff[?2004l
+[?1h=[1mdiff --git a/typescript b/typescript[m[m
+[1mindex 307ac53..ba4d9b6 100644[m[m
+[1m--- a/typescript[m[m
+[1m+++ b/typescript[m[m
+[36m@@ -20262,4 +20262,48 @@[m [mHEAD is now at 1b79d07 Merge pull request #1 fro[m [36m[m[mm mitsuru-tachibana/develop[m[m
+ [33mRun `bundle install` to install missing gems.[0m[m[m
+ [1m[7m%[27m[1m[0m                                                                       [m [1m[7m[27m[1m[0m [7m^M[27m [7m^M[27m[m[m
+ [7m^M[27m[0m[27m[24m[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m[m[m
+[31m-[38;5;087m> [0m17:31:44[m[m
+\ No newline at end of file[m[m
+[32m+[m[32m[38;5;087m> [0m17:31:44[1mg[0mit add[1m [0m.[m[41m[7m^M[27m[m[m
+[32m+[m[32m[1m[7m%[27m[1m[0m[m[41m                                                                       [m [32m[m[32m[1m[7m[27m[1m[0m[m[41m [7m^M[27m [7m^M[27m[m[m
+[32m+[m[32m[7m^M[27m[0m[27m[24m[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m[m[41m[7m^M[27m[m[m
+[32m+[m[32m[38;5;087m> [0m17:32:41[1mg[0mit[1m [0mcommit[1mv[0misualizeの細かな修正"[m[41m[7m^M[27m[m[m
+[32m+[m[32m[develop ab40c8b] visualizeの細かな修正[m[41m[7m^M[27m[m[m
+[32m+[m[32m 5 files changed, 20341 insertions(+), 85 deletions(-)[m[41m[7m^M[27m[m[m
+[32m+[m[32m delete mode 100644 convert_csv.rb[m[41m[7m^M[27m[m[m
+[32m+[m[32m create mode 100644 cp_gemfile[m[41m[7m^M[27m[m[m
+[32m+[m[32m create mode 100644 typescript[m[41m[7m^M[27m[m[m
+[32m+[m[32m[1m[7m%[27m[1m[0m[m[41m                                                                       [m [32m[m[32m[1m[7m[27m[1m[0m[m[41m [7m^M[27m [7m^M[27m[m[m
+[32m+[m[32m[7m^M[27m[0m[27m[24m[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m[m[41m[7m^M[27m[m[m
+:[K[K[?1l>[1m[7m%[27m[1m[0m                                                                         
+[0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
+[38;5;087m> [0m[K[62C17:34:55[70D[?2004h[H[2J[0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
+[38;5;087m> [0m[K[62C17:35:05[70Dgit diffpush origin master[18Dcommit -m "visualizeの細かな修正"[33Dpush origin master               [15D:develop[?2004l
+Warning: Permanently added 'github.com,52.69.186.44' (ECDSA) to the list of known hosts.
+Everything up-to-date
+[1m[7m%[27m[1m[0m                                                                         
+[0m[27m[24m[J[30;48;5;178m[38;5;000m%tachibana[30;48;5;031m[38;5;178m[30;48;5;031m[38;5;255m ~/Programs/fukazawa_sample_app[0m[38;5;031m[0m　[31m develop[00m
+[38;5;087m> [0m[K[62C17:35:32[70D[?2004h
