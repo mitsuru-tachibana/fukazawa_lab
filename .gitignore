@@ -30,4 +30,8 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-/convert_csv
+/convert_csv/
+logfile
+erd.pdf
+
+.DS_Store
