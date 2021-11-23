@@ -31,5 +31,7 @@
 /config/master.key
 
 /convert_csv/
-/logfile
-/erd.pdf
+logfile
+erd.pdf
+
+.DS_Store
