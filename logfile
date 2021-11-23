@@ -43,3 +43,9 @@
 2021-11-16 14:46:23.415 JST [3331] LOG:  database system was shut down at 2021-11-12 16:04:55 JST
 2021-11-16 14:46:23.418 JST [3330] LOG:  database system is ready to accept connections
 2021-11-16 14:51:02.698 JST [3418] FATAL:  database "fukazawa_sample_app_developmentb" does not exist
+2021-11-23 13:50:36.208 JST [1706] LOG:  starting PostgreSQL 14.0 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2021-11-23 13:50:36.209 JST [1706] LOG:  listening on IPv6 address "::1", port 5432
+2021-11-23 13:50:36.209 JST [1706] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-11-23 13:50:36.210 JST [1706] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-11-23 13:50:36.222 JST [1707] LOG:  database system was shut down at 2021-11-22 18:16:30 JST
+2021-11-23 13:50:36.227 JST [1706] LOG:  database system is ready to accept connections
