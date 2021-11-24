@@ -88,14 +88,18 @@ end
 
 def visualize(objects)
   file_name = convert_csv(objects)
+  class_name = file_name.split('_')[0]
   attr_num = objects.first.attributes.length
-  records = []
+  records_hash = {}
   CSV.open("convert_csv/#{file_name}", 'r') do |csv|
-    csv.each_slice(attr_num) do |entry|
-      records << entry
+    csv.each_slice(attr_num).each_with_index do |obj, index|
+      record_hash = {}
+      obj.each do |data|
+        record_hash.store(data[0], data[1])
+      end
+      records_hash.store("record_#{index}", record_hash)
     end
   end
-  class_name = file_name.split('_')[0]
-  Launchy.open('https://www.youtube.com')
-  # Launchy.open("hogehoge/visualize?class_name=#{class_name}&#{records.to_query('records')}")
+  Launchy.open("http://localhost:3000//visualize?class_name=#{class_name}&#{records_hash.to_query('records')}")
+  # Launchy.open("https://records-visualiza.herokuapp.com/visualize?class_name=#{class_name}&#{records_hash.to_query('records')}")
 end
