@@ -30,10 +30,9 @@ end
 def attr_to_csv(objects)
   # text_to_attr.txtにてオブジェクトごとの行数を算出
   obj_lines = objects.first.attributes.length + 2
-  file_lines = objects.length * obj_lines
   # 書き込み様のファイル名を作成
-  class_name = objects.class.to_s.split('::')[0]
-  file_name = "#{class_name}#{DateTime.now.strftime('_%y%m%d_%H%M%S')}.csv"
+  class_name = objects.first.class.to_s.split('(')[0]
+  file_name = "#{class_name}#{Time.now.strftime('_%y%m%d_%H%M%S')}.csv"
   # 属性と値がセットになっているファイルを読み込む
   File.open('convert_csv/intermediates/text_to_attr.txt', 'r') do |f_tta|
     # 書き込み様のCSVファイルを開く
@@ -92,12 +91,14 @@ def visualize(objects)
   attr_num = objects.first.attributes.length
   records_hash = {}
   CSV.open("convert_csv/#{file_name}", 'r') do |csv|
-    csv.each_slice(attr_num).each_with_index do |obj, index|
+    csv.each_slice(attr_num).each_with_index do |rec, rec_id|
       record_hash = {}
-      obj.each do |data|
-        record_hash.store(data[0], data[1])
+      rec.each.with_index do |data, data_id|
+        data_hash = {}
+        data_hash.store(data[0], data[1])
+        record_hash.store(data_id, data_hash)
       end
-      records_hash.store("record_#{index}", record_hash)
+      records_hash.store("record_#{rec_id}", record_hash)
     end
   end
   Launchy.open("http://localhost:3000//visualize?class_name=#{class_name}&#{records_hash.to_query('records')}")
