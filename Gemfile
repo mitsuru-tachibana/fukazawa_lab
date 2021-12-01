@@ -16,6 +16,7 @@ gem 'puma', '~> 3.11'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '>= 5.2.4.4'
 gem 'rails-erd'
+gem 'rubocop'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
